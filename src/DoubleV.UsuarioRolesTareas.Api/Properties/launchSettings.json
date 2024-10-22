@@ -1,0 +1,37 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:64466",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "",
+      "applicationUrl": "http://localhost:5026",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "local",
+        "clientId": "4c55d183-63b4-4b57-9194-6d1ab473cbe4",
+        "tenantId": "93d82be6-f522-4bb9-b5ed-88d54a5dc79e",
+        "clientSecret": "M-D8Q~mneaVA9D-BDYnkRApCg0Vn_7cLI3GxKcP5"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "local",
+        "clientId": "4c55d183-63b4-4b57-9194-6d1ab473cbe4",
+        "tenantId": "93d82be6-f522-4bb9-b5ed-88d54a5dc79e",
+        "clientSecret": "M-D8Q~mneaVA9D-BDYnkRApCg0Vn_7cLI3GxKcP5"
+      }
+    }
+  }
+}

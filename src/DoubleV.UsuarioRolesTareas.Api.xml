@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DoubleV.UsuarioRolesTareas.Api</name>
+    </assembly>
+    <members>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.EstadoController.CrearEstado(DoubleV.UsuarioRolesTareas.Application.Models.EstadoModel,DoubleV.UsuarioRolesTareas.Application.Interfaces.IEstadoService)">
+            <summary>
+            Crea un nuevo estado en el sistema.
+            </summary>
+            <param name="estado">El objeto Estado que contiene los datos del nuevo estado.</param>
+            <param name="estadoService">El servicio de estados que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Estado creado y un código de estado 201 Created.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.EstadoController.ActualizarEstado(DoubleV.UsuarioRolesTareas.Application.Models.EstadoModel,DoubleV.UsuarioRolesTareas.Application.Interfaces.IEstadoService)">
+            <summary>
+            Actualiza los datos de un estado existente.
+            </summary>
+            <param name="estado">El objeto Estado con los datos actualizados.</param>
+            <param name="estadoService">El servicio de estados que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Estado actualizado y un código de estado 200 OK.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.EstadoController.EliminarEstado(System.Int32,DoubleV.UsuarioRolesTareas.Application.Interfaces.IEstadoService)">
+            <summary>
+            Elimina un estado por su ID.
+            </summary>
+            <param name="id">El ID del estado que se va a eliminar.</param>
+            <param name="estadoService">El servicio de estados que maneja la lógica de negocio.</param>
+            <returns>Retorna un código de estado 204 No Content si la eliminación es exitosa.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.EstadoController.ObtenerEstadoPorId(System.Int32,DoubleV.UsuarioRolesTareas.Application.Interfaces.IEstadoService)">
+            <summary>
+            Obtiene un estado por su ID.
+            </summary>
+            <param name="id">El ID del estado que se va a obtener.</param>
+            <param name="estadoService">El servicio de estados que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Estado si se encuentra, o un código de estado 404 Not Found si no se encuentra.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.EstadoController.ObtenerTodosLosEstados(DoubleV.UsuarioRolesTareas.Application.Interfaces.IEstadoService)">
+            <summary>
+            Obtiene todos los estados registrados.
+            </summary>
+            <param name="estadoService">El servicio de estados que maneja la lógica de negocio.</param>
+            <returns>Retorna una lista de todos los estados y un código de estado 200 OK.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.PaginaController.CrearPagina(DoubleV.UsuarioRolesTareas.Application.Models.PaginaModel,DoubleV.UsuarioRolesTareas.Application.Interfaces.IPaginaService)">
+            <summary>
+            Crea una nueva página en el sistema.
+            </summary>
+            <param name="pagina">El objeto Pagina que contiene los datos de la nueva página.</param>
+            <param name="paginaService">El servicio de páginas que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Pagina creado y un código de estado 201 Created.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.PaginaController.ActualizarPagina(DoubleV.UsuarioRolesTareas.Application.Models.PaginaModel,DoubleV.UsuarioRolesTareas.Application.Interfaces.IPaginaService)">
+            <summary>
+            Actualiza los datos de una página existente.
+            </summary>
+            <param name="pagina">El objeto Pagina con los datos actualizados.</param>
+            <param name="paginaService">El servicio de páginas que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Pagina actualizado y un código de estado 200 OK.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.PaginaController.EliminarPagina(System.Int32,DoubleV.UsuarioRolesTareas.Application.Interfaces.IPaginaService)">
+            <summary>
+            Elimina una página por su ID.
+            </summary>
+            <param name="id">El ID de la página que se va a eliminar.</param>
+            <param name="paginaService">El servicio de páginas que maneja la lógica de negocio.</param>
+            <returns>Retorna un código de estado 204 No Content si la eliminación es exitosa.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.PaginaController.ObtenerPaginaPorId(System.Int32,DoubleV.UsuarioRolesTareas.Application.Interfaces.IPaginaService)">
+            <summary>
+            Obtiene una página por su ID.
+            </summary>
+            <param name="id">El ID de la página que se va a obtener.</param>
+            <param name="paginaService">El servicio de páginas que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Pagina si se encuentra, o un código de estado 404 Not Found si no se encuentra.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.PaginaController.ObtenerTodasLasPaginas(DoubleV.UsuarioRolesTareas.Application.Interfaces.IPaginaService)">
+            <summary>
+            Obtiene todas las páginas registradas.
+            </summary>
+            <param name="paginaService">El servicio de páginas que maneja la lógica de negocio.</param>
+            <returns>Retorna una lista de todas las páginas y un código de estado 200 OK.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.RolController.CrearRol(DoubleV.UsuarioRolesTareas.Application.Models.RolModel,DoubleV.UsuarioRolesTareas.Application.Interfaces.IRolService)">
+            <summary>
+            Crea un nuevo rol en el sistema.
+            </summary>
+            <param name="rol">El objeto Rol que contiene los datos del nuevo rol.</param>
+            <param name="rolService">El servicio de roles que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Rol creado y un código de estado 201 Created.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.RolController.ActualizarRol(DoubleV.UsuarioRolesTareas.Application.Models.RolModel,DoubleV.UsuarioRolesTareas.Application.Interfaces.IRolService)">
+            <summary>
+            Actualiza los datos de un rol existente.
+            </summary>
+            <param name="rol">El objeto Rol con los datos actualizados.</param>
+            <param name="rolService">El servicio de roles que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Rol actualizado y un código de estado 200 OK.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.RolController.EliminarRol(System.Int32,DoubleV.UsuarioRolesTareas.Application.Interfaces.IRolService)">
+            <summary>
+            Elimina un rol por su ID.
+            </summary>
+            <param name="id">El ID del rol que se va a eliminar.</param>
+            <param name="rolService">El servicio de roles que maneja la lógica de negocio.</param>
+            <returns>Retorna un código de estado 204 No Content si la eliminación es exitosa.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.RolController.ObtenerRolPorId(System.Int32,DoubleV.UsuarioRolesTareas.Application.Interfaces.IRolService)">
+            <summary>
+            Obtiene un rol por su ID.
+            </summary>
+            <param name="id">El ID del rol que se va a obtener.</param>
+            <param name="rolService">El servicio de roles que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Rol si se encuentra, o un código de estado 404 Not Found si no se encuentra.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.RolController.ObtenerTodosLosRoles(DoubleV.UsuarioRolesTareas.Application.Interfaces.IRolService)">
+            <summary>
+            Obtiene todos los roles registrados.
+            </summary>
+            <param name="rolService">El servicio de roles que maneja la lógica de negocio.</param>
+            <returns>Retorna una lista de todos los roles y un código de estado 200 OK.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.TareaController.CrearTarea(DoubleV.UsuarioRolesTareas.Application.Models.TareaModel,DoubleV.UsuarioRolesTareas.Application.Interfaces.ITareaService)">
+            <summary>
+            Crea una nueva tarea en el sistema.
+            </summary>
+            <param name="tarea">El objeto Tarea que contiene los datos de la nueva tarea.</param>
+            <param name="tareaService">El servicio de tareas que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Tarea creado y un código de estado 201 Created.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.TareaController.ActualizarTarea(DoubleV.UsuarioRolesTareas.Application.Models.TareaModel,DoubleV.UsuarioRolesTareas.Application.Interfaces.ITareaService)">
+            <summary>
+            Actualiza los datos de una tarea existente.
+            </summary>
+            <param name="tarea">El objeto Tarea con los datos actualizados.</param>
+            <param name="tareaService">El servicio de tareas que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Tarea actualizado y un código de estado 200 OK.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.TareaController.EliminarTarea(System.Int32,DoubleV.UsuarioRolesTareas.Application.Interfaces.ITareaService)">
+            <summary>
+            Elimina una tarea por su ID.
+            </summary>
+            <param name="id">El ID de la tarea que se va a eliminar.</param>
+            <param name="tareaService">El servicio de tareas que maneja la lógica de negocio.</param>
+            <returns>Retorna un código de estado 204 No Content si la eliminación es exitosa.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.TareaController.ObtenerTareaPorId(System.Int32,DoubleV.UsuarioRolesTareas.Application.Interfaces.ITareaService)">
+            <summary>
+            Obtiene una tarea por su ID.
+            </summary>
+            <param name="id">El ID de la tarea que se va a obtener.</param>
+            <param name="tareaService">El servicio de tareas que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Tarea si se encuentra, o un código de estado 404 Not Found si no se encuentra.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.TareaController.ObtenerTodasLasTareas(DoubleV.UsuarioRolesTareas.Application.Interfaces.ITareaService)">
+            <summary>
+            Obtiene todas las tareas registradas.
+            </summary>
+            <param name="tareaService">El servicio de tareas que maneja la lógica de negocio.</param>
+            <returns>Retorna una lista de todas las tareas y un código de estado 200 OK.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.UsuarioController.CrearUsuario(DoubleV.UsuarioRolesTareas.Application.Models.UsuarioModel,DoubleV.UsuarioRolesTareas.Application.Interfaces.IUsuarioService,FluentValidation.IValidator{DoubleV.UsuarioRolesTareas.Application.Models.UsuarioModel})">
+            <summary>
+            Crea un nuevo usuario en el sistema.
+            </summary>
+            <param name="usuario">El objeto Usuario que contiene los datos del nuevo usuario.</param>
+            <param name="usuarioService">El servicio de usuarios que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Usuario creado y un código de estado 201 Created.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.UsuarioController.ActualizarUsuario(DoubleV.UsuarioRolesTareas.Application.Models.UsuarioModel,DoubleV.UsuarioRolesTareas.Application.Interfaces.IUsuarioService,FluentValidation.IValidator{DoubleV.UsuarioRolesTareas.Application.Models.UsuarioModel})">
+            <summary>
+            Actualiza los datos de un usuario existente.
+            </summary>
+            <param name="usuario">El objeto Usuario con los datos actualizados.</param>
+            <param name="usuarioService">El servicio de usuarios que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Usuario actualizado y un código de estado 200 OK.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.UsuarioController.EliminarUsuario(System.Int32,DoubleV.UsuarioRolesTareas.Application.Interfaces.IUsuarioService)">
+            <summary>
+            Elimina un usuario por su ID.
+            </summary>
+            <param name="id">El ID del usuario que se va a eliminar.</param>
+            <param name="usuarioService">El servicio de usuarios que maneja la lógica de negocio.</param>
+            <returns>Retorna un código de estado 204 No Content si la eliminación es exitosa.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.UsuarioController.ObtenerUsuarioPorId(System.Int32,DoubleV.UsuarioRolesTareas.Application.Interfaces.IUsuarioService)">
+            <summary>
+            Obtiene un usuario por su ID.
+            </summary>
+            <param name="id">El ID del usuario que se va a obtener.</param>
+            <param name="usuarioService">El servicio de usuarios que maneja la lógica de negocio.</param>
+            <returns>Retorna el objeto Usuario si se encuentra, o un código de estado 404 Not Found si no se encuentra.</returns>
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.UsuarioController.ObtenerTodosLosUsuarios(DoubleV.UsuarioRolesTareas.Application.Interfaces.IUsuarioService)">
+            <summary>
+            Obtiene todos los usuarios registrados.
+            </summary>
+            <param name="usuarioService">El servicio de usuarios que maneja la lógica de negocio.</param>
+            <returns>Retorna una lista de todos los usuarios y un código de estado 200 OK.</returns>        
+        </member>
+        <member name="M:DoubleV.UsuarioRolesTareas.Api.Controllers.UsuarioController.ObtenerUsuarioEmailContraseña(DoubleV.UsuarioRolesTareas.Application.Models.UsuarioModel,DoubleV.UsuarioRolesTareas.Application.Interfaces.IUsuarioService)">
+            <summary>
+            Obtiene todos los usuarios registrados.
+            </summary>
+            <param name="usuarioService">El servicio de usuarios que maneja la lógica de negocio.</param>
+            <returns>Retorna una lista de todos los usuarios y un código de estado 200 OK.</returns>
+        </member>
+    </members>
+</doc>
