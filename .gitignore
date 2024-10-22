@@ -1,0 +1,38 @@
+# Binaries
+bin/
+obj/
+*.exe
+*.dll
+
+# Build artifacts
+*.log
+*.vs
+.vscode/
+.vs/
+out/
+*.dbmdl
+*.pdb
+*.cache
+*.ilk
+*.iobj
+*.ipdb
+*.tlog
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.userprefs
+*.sqlite
+*.sql
+*.mdf
+*.ldf
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Azure related
+PublishProfiles/
+
+# Database context
